@@ -22,3 +22,7 @@ requirements nesse ambiente criado
 5 - Execute o comando python manage.py makemigrations e python manage.py migrate para executar as migrações e popular 
 o banco de dados, em seguida execute com python manage.py runserver na porta 8000.
 
+Acesse a url:
+
+http://127.0.0.1:8000/api/api/servidores/
+
