@@ -4,10 +4,6 @@ consumidos pelo sistema 2.
 
 O intuito desse crud é o estudo de API com atutenticação.
 
-O sistema que consome é o:
-
-https://github.com/95Caique/Sistema2
-
 1 - Para executar, clone o repostório
 
 2 - Navegue até a pasta do projeto com o comando cd sistema_1
@@ -22,7 +18,12 @@ requirements nesse ambiente criado
 5 - Execute o comando python manage.py makemigrations e python manage.py migrate para executar as migrações e popular 
 o banco de dados, em seguida execute com python manage.py runserver na porta 8000.
 
-Acesse a url:
+Após executar, acesse a url:
 
 http://127.0.0.1:8000/api/api/servidores/
 
+
+O sistema que consome a api e recebe os dados importados é o sistema2, execute-o na porta 8011 com 
+o comando python manage.py runserver 0.0.0.0:8011
+
+https://github.com/95Caique/Sistema2
