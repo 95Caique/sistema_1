@@ -4,6 +4,8 @@ from django.core.validators import MaxLengthValidator, MinLengthValidator
 
 class Servidor(models.Model):
     nome = models.CharField(max_length=100)
+    lotacao = models.CharField(max_length=50, default='')
+    cidade = models.CharField(max_length= 50, default='')
     cpf = models.CharField(
         max_length=11,
         unique=True,
@@ -14,6 +16,7 @@ class Servidor(models.Model):
         unique=True,
         validators=[MinLengthValidator(6), MaxLengthValidator(6)]
     )
+    funcao = models.CharField(max_length=50, default='')
     data_nascimento = models.DateField()
     email = models.EmailField(unique=True)
     telefone = models.CharField(max_length=15)
