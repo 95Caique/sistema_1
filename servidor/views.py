@@ -14,7 +14,6 @@ class ServidorViewSet(viewsets.ModelViewSet):
     def buscar_por_cpf_ou_matricula(self, request):
         identificador = request.query_params.get('identificador', '')
 
-        # Tenta buscar por CPF ou matrícula
         servidor = Servidor.objects.filter(
             models.Q(cpf=identificador) |
             models.Q(matricula=identificador)
@@ -26,7 +25,7 @@ class ServidorViewSet(viewsets.ModelViewSet):
         return Response({'detail': 'Servidor não encontrado'}, status=404)
 
 def lista_servidores(request):
-    servidores = Servidor.objects.all()  # Pega todos os servidores
+    servidores = Servidor.objects.all()
     return render(request, 'lista_servidores.html', {'servidores': servidores})
 
 def perfil_servidor(request, identificador):
