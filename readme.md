@@ -1,4 +1,4 @@
-Sistema base para disponibilizar os dados para serem importados via api.
+Sistema base para disponibilizar os dados para serem disponibilizados via api, que será usado no Suap (https://portal.suap.ifrn.edu.br/)
 Nele contém apenas dados simples de servidores públicos ficticios que serão
 consumidos pelo sistema 2. 
 
